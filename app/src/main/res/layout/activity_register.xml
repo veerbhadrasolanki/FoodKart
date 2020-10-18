@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_profile"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_margin="8dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEmail"
+        android:layout_margin="8dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_mobilenumber"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtMobileNumber"
+        android:layout_margin="8dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/ic_delivery"
+        android:hint="@string/delivery_address"
+        android:inputType="textPostalAddress"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDelivery"
+        android:layout_margin="8dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_margin="8dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/ic_password"
+        android:hint="@string/confirmpassword"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtConfirmPassword"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="@string/registration"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

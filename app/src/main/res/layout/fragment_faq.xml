@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".fragment.FaqFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/txtQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Q1. What is FoodKart?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQ1"
+                android:padding="5sp"
+                android:text="FoodKart is food ordering app to save you time and money."
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/viewV1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtA1"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="#f5f5f5"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:padding="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewV1"
+                android:padding="8dp"
+                android:text="Q2. Why should I use FoodKart instead of calling the restaurant?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQ2"
+                android:padding="5dp"
+                android:text="Because Restaurants that are busy want to use online ordering when they have no time to answer their phones."
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/viewV2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtA2"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="#f5f5f5"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/txtQ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewV2"
+                android:padding="8dp"
+                android:text="Q3. Are there any age restrictions on using FoodKart?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtA3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQ3"
+                android:padding="5dp"
+                android:text="No, Foodkart is available for anyone to order food."
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/viewV3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtA3"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="#f5f5f5"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewV3"
+                android:padding="8dp"
+                android:text="Q4. What information is required to Registration?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtA4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQ4"
+                android:padding="5dp"
+                android:text="You can start ordering food as soon as you create your FoodKart account. For that, we’ll need your Name, Mobile Number, Email address and Address."
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/viewV4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtA4"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="#f5f5f5"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/txtQ5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewV4"
+                android:padding="8dp"
+                android:text="Q5. How can I reset my password?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtA5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQ5"
+                android:padding="5dp"
+                android:text="Tap on Forgot Password then enter your registered mobile number and email address. When you received OTP(One Time Password on Email) Enter your OTP and New Password then hit enter it will change your password."
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/viewV5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtA5"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="#f5f5f5"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtQ6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewV5"
+                android:padding="8dp"
+                android:text="Q6. More Information about FoodKart?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtA6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQ6"
+                android:padding="5dp"
+                android:text="FoodKart is food ordering app and this is project given by internshala as final project of android app development training."
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/viewV6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtA6"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="#f5f5f5"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
