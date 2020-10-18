@@ -17,6 +17,6 @@ The scope of this demo application is limited to show list of restaurants, list 
 
 - Goto File-> Sync Project with Gradle Files
 
-- Goto Buil -> Rebuild
+- Goto Build -> Rebuild
 
-- Run -> Run app/Shift+F10
+- Run -> Run app
